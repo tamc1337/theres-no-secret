@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;  
+}
+ol, ul {
+	list-style: none;
+}
+html:focus-within {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+
+.theGrid{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.theGrid div{
+    /* border: 1px solid black; */
+    background-color: black;
+    color: white;
+    width: calc(94vw/12);
+    height: calc(94vh/12);
+    text-align: center;
+    line-height: calc(94vh/12);
+}
+.storyDiv{
+    color: white;
+}
+.storyDiv #key{
+    display: contents;
+}
+.nope{
+    color: white;
+}
+.overlord{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.escape{
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    
+}
+.escape a{
+color: black;
+}
+.escape a:hover{
+    cursor: crosshair;
+    ;
+}
+.div3c{
+    text-decoration: none;
+    color: white;
+}
+.div3c:hover,
+.div20a:hover,
+.div20:hover{
+    cursor: default;
+}
+.div36c{
+    font-size: .7rem;
+}
+.storyDiv #secretLink{
+    color: inherit;
+    text-decoration: inherit;
+    cursor:default;
+    pointer-events: none;
+}
+.storyDiv #secretLink.unlocked{
+    cursor: pointer;
+    color: green;
+    pointer-events: unset;
+}
+#key1,
+#key2{
+    display: inline;
+}
+.startMaze{
+    /* color: black; */
+    animation: color 9s ease infinite;
+    font-size: 4rem;
+}
+.overlord a{
+    text-decoration: none;
+}
+@keyframes color{
+    0%{
+        color:black;
+    }
+    80%{
+        color: rgba(0, 0, 0, 0.8);
+    }
+    95%{
+        color:gold;
+    }
+    96%{
+        color: blue;
+    }
+    97%{
+        color: red;
+    }
+    98%{
+        color: purple;
+    }
+    99%{
+        color: grey;
+    }
+    100%{
+        color: white;
+    }
+}
